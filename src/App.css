@@ -40,7 +40,7 @@ body{
   color:#333;
   text-decoration:none;
   font-weight:500;
-  font-size:15px;
+  font-size:20px;
   transition:color 0.3s;
 }
 
@@ -307,6 +307,67 @@ body{
 .whatsapp:hover{
   background:#20ba5a;
   transform:scale(1.05);
+}
+
+.contact-form{
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+  max-width:600px;
+  margin:0 auto 40px;
+}
+
+.contact-form input,
+.contact-form textarea{
+  padding:14px 18px;
+  border:none;
+  border-radius:8px;
+  font-size:15px;
+  font-family:inherit;
+  outline:none;
+  background:rgba(255,255,255,0.15);
+  color:#fdfdfd;
+  border:1px solid rgba(255,255,255,0.3);
+  transition:border 0.3s;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder{
+  color:rgba(255,255,255,0.7);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+  border:1px solid #fdfdfd;
+}
+
+.contact-form button{
+  padding:15px;
+  background:#fdfdfd;
+  color:#0e66ad;
+  border:none;
+  border-radius:8px;
+  font-size:16px;
+  font-weight:700;
+  cursor:pointer;
+  transition:background 0.3s,transform 0.3s;
+}
+
+.contact-form button:hover{
+  background:#e8f0fe;
+  transform:scale(1.02);
+}
+
+.form-success{
+  color:#a8f0c6;
+  font-size:16px;
+  margin-bottom:20px;
+}
+
+.form-error{
+  color:#ffaaaa;
+  font-size:16px;
+  margin-bottom:20px;
 }
 
 .whatsapp-float{
