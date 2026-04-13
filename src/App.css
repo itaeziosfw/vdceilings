@@ -30,7 +30,7 @@ body{
 }
 
 .logo{
-  height:180px;
+  height:200px;
   width:auto;
   object-fit:contain;
 }
@@ -40,7 +40,7 @@ body{
   color:#333;
   text-decoration:none;
   font-weight:500;
-  font-size:30px;
+  font-size:32px;
   transition:color 0.3s;
 }
 
@@ -399,11 +399,11 @@ body{
     padding:5px 15px;
   }
   .logo{
-    height:70px;
+    height:110px;
   }
   .links a{
     margin-left:12px;
-    font-size:12px;
+    font-size:16px;
   }
   .hero{
     height:350px;
@@ -512,11 +512,11 @@ body{
     padding:5px 10px;
   }
   .logo{
-    height:60px;
+    height:95px;
   }
   .links a{
     margin-left:8px;
-    font-size:11px;
+    font-size:15px;
   }
   .hero{
     height:300px;
