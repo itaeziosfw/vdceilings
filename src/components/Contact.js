@@ -36,6 +36,7 @@ export default function Contact() {
                 <div className="contact-item">
                     <span>📧</span>
                     <p>Victorsilva.artdecor@gmail.com</p>
+                    <p>djalmapassos544@gmail.com</p>
                 </div>
 
                 <div className="contact-item">
