@@ -30,7 +30,7 @@ export default function Contact() {
 
                 <div className="contact-item">
                     <span>📞</span>
-                    <p>087 292 2619</p>
+                    <p>087 962 1691</p>
                 </div>
 
                 <div className="contact-item">
@@ -41,7 +41,7 @@ export default function Contact() {
 
                 <div className="contact-item">
                     <span>🕒</span>
-                    <p>Mon - Fri: 08:00 - 17:00</p>
+                    <p>Mon - Fri: 07:00 - 17:00</p>
                 </div>
 
             </div>
