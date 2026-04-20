@@ -14,13 +14,16 @@ import project12 from "../assets/images/project12.jpg.jpeg";
 import video1 from "../assets/videos/video1.mp4.mp4";
 import video2 from "../assets/videos/video2.mp4.mp4";
 import video3 from "../assets/videos/video3.mp4.mp4";
+import video4 from "../assets/videos/video4.mp4.mp4";
+import video5 from "../assets/videos/video5.mp4.mp4";
+
 
 const projects = [
     project1, project2, project3, project4, project5, project6,
     project7, project8, project9, project10, project11, project12
 ];
 
-const videos = [video1, video2, video3];
+const videos = [video1, video2, video3, video4, video5];
 
 export default function Gallery() {
     const [currentIndex, setCurrentIndex] = useState(0);
