@@ -5,6 +5,8 @@ import imgDryConstruct from "../assets/images/project9.jpg.jpeg";
 import imgMFCeilings from "../assets/images/project17.jpg.jpeg";
 import imgPartitions from "../assets/images/project10.jpg.jpeg";
 import imgInsulation from "../assets/images/project15.jpg.jpeg";
+import imgReairs from "../assets/images/project20.jpg.jpeg";
+
 
 const services = [
     {
@@ -48,6 +50,21 @@ const services = [
 
         ],
     },
+
+
+    {
+        title: "Ceilings and partitions Repairs",
+        image: imgReairs,
+        paragraphs: [
+            "We specialize in small-scale repairs and the maintenance of ceilings and partitions. Our team provides fast, reliable solutions for cracks, water damage, and structural touch-ups in your home or office. ",
+            " From fixing minor drywall holes to restoring ceiling linings, we ensure a seamless and professional finish. We take pride in our attention to detail, making sure every repair is virtually invisible.",
+            ".Trust us to keep your interiors looking flawless with high-quality materials and efficient service.",
+
+        ],
+    },
+
+
+
 ];
 
 const styles = {
