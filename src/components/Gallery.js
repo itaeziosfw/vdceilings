@@ -19,8 +19,18 @@ import video5 from "../assets/videos/video5.mp4.mp4";
 
 
 const projects = [
-    project1, project2, project3, project4, project5, project6,
-    project7, project8, project9, project10, project11, project12
+    { img: project1, alt: "Steel Frame construction project by V/D Ceilings Ireland" },
+    { img: project2, alt: "Drywall partition project by V/D Ceilings Ireland" },
+    { img: project3, alt: "MF Ceiling installation by V/D Ceilings Ireland" },
+    { img: project4, alt: "Dry construction project by V/D Ceilings Ireland" },
+    { img: project5, alt: "Insulation project by V/D Ceilings Ireland" },
+    { img: project6, alt: "Commercial ceiling project by V/D Ceilings Ireland" },
+    { img: project7, alt: "Residential drywall project by V/D Ceilings Ireland" },
+    { img: project8, alt: "Steel Frame partition by V/D Ceilings Ireland" },
+    { img: project9, alt: "MF Ceiling project by V/D Ceilings Ireland" },
+    { img: project10, alt: "Drywall finishing by V/D Ceilings Ireland" },
+    { img: project11, alt: "Dry construction finishing by V/D Ceilings Ireland" },
+    { img: project12, alt: "Commercial partition project by V/D Ceilings Ireland" }
 ];
 
 const videos = [video1, video2, video3, video4, video5];
@@ -52,7 +62,7 @@ export default function Gallery() {
 
             <div className="carousel">
                 <button className="carousel-btn prev" onClick={prevSlide} aria-label="Previous project">❮</button>
-                <img src={projects[currentIndex]} alt={`V/D Ceilings Project ${currentIndex + 1} - Steel Frame and Dry Construction`} className="carousel-img" />
+                <img src={projects[currentIndex].img} alt={projects[currentIndex].alt} className="carousel-img" />
                 <button className="carousel-btn next" onClick={nextSlide} aria-label="Next project">❯</button>
             </div>
 
