@@ -62,7 +62,14 @@ export default function Gallery() {
 
             <div className="carousel">
                 <button className="carousel-btn prev" onClick={prevSlide} aria-label="Previous project">❮</button>
-                <img src={projects[currentIndex].img} alt={projects[currentIndex].alt} className="carousel-img" />
+                <img
+                    src={projects[currentIndex].img}
+                    alt={projects[currentIndex].alt}
+                    className="carousel-img"
+                    width="900"
+                    height="500"
+                    loading={currentIndex === 0 ? 'eager' : 'lazy'}
+                />
                 <button className="carousel-btn next" onClick={nextSlide} aria-label="Next project">❯</button>
             </div>
 
@@ -82,6 +89,7 @@ export default function Gallery() {
                 <button className="carousel-btn prev" onClick={prevVideo} aria-label="Previous video">❮</button>
                 <video key={currentVideoIndex} controls className="carousel-video" title={`V/D Ceilings Video ${currentVideoIndex + 1}`}>
                     <source src={videos[currentVideoIndex]} type="video/mp4" />
+                    <track kind="captions" srcLang="en" label="English" default />
                 </video>
                 <button className="carousel-btn next" onClick={nextVideo} aria-label="Next video">❯</button>
             </div>

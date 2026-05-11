@@ -11,11 +11,13 @@ function App() {
   return (
     <div>
       <Navbar />
-      <Hero />
-      <About />
-      <Services />
-      <Gallery />
-      <Contact />
+      <main>
+        <Hero />
+        <About />
+        <Services />
+        <Gallery />
+        <Contact />
+      </main>
       <WhatsAppFloat />
     </div>
   )
