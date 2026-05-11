@@ -112,6 +112,13 @@ const styles = {
         marginBottom: "16px",
         marginTop: "0",
     },
+    cardSubtitle: {
+        fontSize: "1rem",
+        fontWeight: "600",
+        color: "#333",
+        marginTop: "0",
+        marginBottom: "16px",
+    },
     cardText: {
         fontSize: "0.93rem",
         color: "#444",
@@ -135,6 +142,7 @@ export default function Services() {
                         />
                         <div style={styles.cardBody}>
                             <h3 style={styles.cardTitle}>{service.title}</h3>
+                            <h4 style={styles.cardSubtitle}>Professional dry construction solutions for every room</h4>
                             {service.paragraphs.map((para, i) => (
                                 <p key={i} style={styles.cardText}>{para}</p>
                             ))}

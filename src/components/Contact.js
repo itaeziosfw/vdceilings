@@ -47,10 +47,13 @@ export default function Contact() {
             </div>
 
             <form onSubmit={handleSubmit} className="contact-form">
-                <input type="text" name="name" placeholder="Your name" required />
-                <input type="email" name="email" placeholder="Your email" required />
-                <textarea name="message" rows="5" placeholder="Your message" required />
-                <button type="submit">
+                <label htmlFor="name">Your Name *</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required aria-required="true" />
+                <label htmlFor="email">Your Email *</label>
+                <input type="email" id="email" name="email" placeholder="Your email" required aria-required="true" />
+                <label htmlFor="message">Your Message *</label>
+                <textarea id="message" name="message" rows="5" placeholder="Your message" required aria-required="true" />
+                <button type="submit" aria-label="Send contact form message">
                     {status === 'SENDING' ? 'Sending...'
                         : status === 'SUCCESS' ? 'Sent ✅'
                             : status === 'FAILED' ? 'Error 😢'
@@ -58,8 +61,8 @@ export default function Contact() {
                 </button>
             </form>
 
-            {status === 'SUCCESS' && <p className="form-success">Message sent successfully! 😊</p>}
-            {status === 'FAILED' && <p className="form-error">Failed to send. Please try again.</p>}
+            {status === 'SUCCESS' && <p className="form-success" role="alert">Message sent successfully! 😊</p>}
+            {status === 'FAILED' && <p className="form-error" role="alert">Failed to send. Please try again.</p>}
 
             <a className="whatsapp" href="https://wa.me/353872922619">
                 💬 Chat on WhatsApp

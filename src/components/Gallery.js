@@ -51,9 +51,9 @@ export default function Gallery() {
             <h2>Our Projects</h2>
 
             <div className="carousel">
-                <button className="carousel-btn prev" onClick={prevSlide}>❮</button>
-                <img src={projects[currentIndex]} alt="Project" className="carousel-img" />
-                <button className="carousel-btn next" onClick={nextSlide}>❯</button>
+                <button className="carousel-btn prev" onClick={prevSlide} aria-label="Previous project">❮</button>
+                <img src={projects[currentIndex]} alt={`V/D Ceilings Project ${currentIndex + 1} - Steel Frame and Dry Construction`} className="carousel-img" />
+                <button className="carousel-btn next" onClick={nextSlide} aria-label="Next project">❯</button>
             </div>
 
             <div className="carousel-dots">
@@ -69,11 +69,11 @@ export default function Gallery() {
             <h2 style={{ marginTop: '80px' }}>Our Videos</h2>
 
             <div className="carousel">
-                <button className="carousel-btn prev" onClick={prevVideo}>❮</button>
-                <video key={currentVideoIndex} controls className="carousel-video">
+                <button className="carousel-btn prev" onClick={prevVideo} aria-label="Previous video">❮</button>
+                <video key={currentVideoIndex} controls className="carousel-video" title={`V/D Ceilings Video ${currentVideoIndex + 1}`}>
                     <source src={videos[currentVideoIndex]} type="video/mp4" />
                 </video>
-                <button className="carousel-btn next" onClick={nextVideo}>❯</button>
+                <button className="carousel-btn next" onClick={nextVideo} aria-label="Next video">❯</button>
             </div>
 
             <div className="carousel-dots">
