@@ -1,16 +1,16 @@
 import React, { useState } from "react";
-import project1 from "../assets/images/project1.jpg.jpeg";
-import project2 from "../assets/images/project2.jpg.jpeg";
-import project3 from "../assets/images/project3.jpg.jpeg";
-import project4 from "../assets/images/project4.jpg.jpeg";
-import project5 from "../assets/images/project5.jpg.jpeg";
-import project6 from "../assets/images/project6.jpg.jpeg";
-import project7 from "../assets/images/project7.jpg.jpeg";
-import project8 from "../assets/images/project8.jpg.jpeg";
-import project9 from "../assets/images/project9.jpg.jpeg";
-import project10 from "../assets/images/project10.jpg.jpeg";
-import project11 from "../assets/images/project11.jpg.jpeg";
-import project12 from "../assets/images/project12.jpg.jpeg";
+import project1 from "../assets/images/project1.jpg.webp";
+import project2 from "../assets/images/project2.jpg.webp";
+import project3 from "../assets/images/project3.jpg.webp";
+import project4 from "../assets/images/project4.jpg.webp";
+import project5 from "../assets/images/project5.jpg.webp";
+import project6 from "../assets/images/project6.jpg.webp";
+import project7 from "../assets/images/project7.jpg.webp";
+import project8 from "../assets/images/project8.jpg.webp";
+import project9 from "../assets/images/project9.jpg.webp";
+import project10 from "../assets/images/project10.jpg.webp";
+import project11 from "../assets/images/project11.jpg.webp";
+import project12 from "../assets/images/project12.jpg.webp";
 import video1 from "../assets/videos/video1.mp4.mp4";
 import video2 from "../assets/videos/video2.mp4.mp4";
 import video3 from "../assets/videos/video3.mp4.mp4";
@@ -69,6 +69,7 @@ export default function Gallery() {
                     width="900"
                     height="500"
                     loading={currentIndex === 0 ? 'eager' : 'lazy'}
+                    decoding="async"
                 />
                 <button className="carousel-btn next" onClick={nextSlide} aria-label="Next project">❯</button>
             </div>
