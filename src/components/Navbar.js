@@ -8,8 +8,8 @@ export default function Navbar() {
     const closeMenu = () => setIsOpen(false);
 
     return (
-        <nav className="navbar">
-            <img src={logo} alt="V/D Ceilings" className="logo" />
+        <nav className="navbar" aria-label="Main navigation">
+            <img src={logo} alt="V/D Ceilings - Home" className="logo" width="160" height="160" />
 
             <button
                 className={`hamburger ${isOpen ? "open" : ""}`}

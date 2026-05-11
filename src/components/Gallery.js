@@ -74,12 +74,17 @@ export default function Gallery() {
                 <button className="carousel-btn next" onClick={nextSlide} aria-label="Next project">❯</button>
             </div>
 
-            <div className="carousel-dots">
+            <div className="carousel-dots" role="tablist" aria-label="Project slides">
                 {projects.map((_, index) => (
                     <span
                         key={index}
+                        role="tab"
+                        tabIndex={0}
+                        aria-label={`Go to project ${index + 1}`}
+                        aria-selected={index === currentIndex}
                         className={`dot ${index === currentIndex ? 'active' : ''}`}
                         onClick={() => setCurrentIndex(index)}
+                        onKeyDown={(e) => e.key === 'Enter' && setCurrentIndex(index)}
                     />
                 ))}
             </div>
@@ -95,12 +100,17 @@ export default function Gallery() {
                 <button className="carousel-btn next" onClick={nextVideo} aria-label="Next video">❯</button>
             </div>
 
-            <div className="carousel-dots">
+            <div className="carousel-dots" role="tablist" aria-label="Video slides">
                 {videos.map((_, index) => (
                     <span
                         key={index}
+                        role="tab"
+                        tabIndex={0}
+                        aria-label={`Go to video ${index + 1}`}
+                        aria-selected={index === currentVideoIndex}
                         className={`dot ${index === currentVideoIndex ? 'active' : ''}`}
                         onClick={() => setCurrentVideoIndex(index)}
+                        onKeyDown={(e) => e.key === 'Enter' && setCurrentVideoIndex(index)}
                     />
                 ))}
             </div>

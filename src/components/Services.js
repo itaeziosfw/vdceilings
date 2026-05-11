@@ -79,7 +79,7 @@ const styles = {
         fontWeight: "700",
         marginBottom: "48px",
         marginTop: "0",
-        color: "#111",
+        color: "#fdfdfd",
     },
     grid: {
         display: "grid",
