@@ -1,11 +1,11 @@
 import React from "react";
 
-import imgSteelFrame from "../assets/images/project11.jpg.jpeg";
-import imgDryConstruct from "../assets/images/project9.jpg.jpeg";
-import imgMFCeilings from "../assets/images/project17.jpg.jpeg";
-import imgPartitions from "../assets/images/project10.jpg.jpeg";
-import imgInsulation from "../assets/images/project15.jpg.jpeg";
-import imgReairs from "../assets/images/project20.jpg.jpeg";
+import imgSteelFrame from "../assets/images/project11.jpg.webp";
+import imgDryConstruct from "../assets/images/project9.jpg.webp";
+import imgMFCeilings from "../assets/images/project17.jpg.webp";
+import imgPartitions from "../assets/images/project10.jpg.webp";
+import imgInsulation from "../assets/images/project15.jpg.webp";
+import imgReairs from "../assets/images/project20.jpg.webp";
 
 
 const services = [
@@ -139,6 +139,10 @@ export default function Services() {
                             src={service.image}
                             alt={service.title}
                             style={styles.cardImage}
+                            width="280"
+                            height="220"
+                            loading="lazy"
+                            decoding="async"
                         />
                         <div style={styles.cardBody}>
                             <h3 style={styles.cardTitle}>{service.title}</h3>
